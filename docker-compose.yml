@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  tlgmbot:
+    image: "tlgm_bot:latest"
+    volumes:
+      - ./app:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+  # Пример открытия порта для веб-приложения (замените на свой порт)
